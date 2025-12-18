@@ -1,6 +1,6 @@
 import os
-import N1
-import N5
+from . import N1
+from . import N5
 
 
 def main():
