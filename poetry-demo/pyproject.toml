@@ -1,0 +1,22 @@
+[project]
+name = "poetry-demo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "MarkFrizen",email = "'myemail@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "logging (>=0.4.9.6,<0.5.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "poetry_demo", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+myapp = "poetry_demo.main:main"
