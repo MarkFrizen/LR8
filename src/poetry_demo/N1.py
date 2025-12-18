@@ -11,7 +11,6 @@ log.basicConfig(
 )
 
 def square(x):
-
     result = x ** 2
     log.debug(f"Квадрат числа {x} = {result}")
     return result
